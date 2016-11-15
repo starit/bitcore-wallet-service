@@ -19,6 +19,13 @@ BWS have a extensive test suite but have not been tested on production environme
 
 More about BWS at https://blog.bitpay.com/announcing-the-bitcore-wallet-suite/
 
+# Docker Boot 
+
+```
+ docker-compose up
+```
+This will launch the BWS service (with default settings) at `http://localhost:3232/bws/api`
+
 # Install
 ```
  npm install bitcore-wallet-service

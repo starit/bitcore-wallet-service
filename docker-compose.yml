@@ -1,0 +1,12 @@
+version: '2'
+services:
+  node-wallet-service:
+    build: .
+    ports:
+      - "3232:3232"  
+    depends_on:
+      - wallet-mongo
+    links:
+      - wallet-mongo
+  wallet-mongo:
+    image: mongo
